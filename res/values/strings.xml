@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Escape The Cave</string>
+    
+    <!-- Options Screen -->
+    <string name="options_title">Options</string>
+    <string name="options_display_picture">Display picture</string>
+    <string name="options_your_name">Your name</string>
+    <string name="options_your_name_default">Player 1</string>
+    <string name="options_skill">Maths skill</string>
+    
+    <string name="options_skill_reason">The better you are, the harder the questions</string>
+    
+    <string name="options_display_set_camera">Take photo</string>
+    <string name="options_display_set_existing">Select photo</string>
+    <string name="options_display_set_icon">Select icon</string>
+    
+    <string name="skill_level_0">Untrained</string>
+    <string name="skill_level_1">Novice</string>
+    <string name="skill_level_2">Competent</string>
+    <string name="skill_level_3">Professional</string>
+    <string name="skill_level_4">Veteran</string>
+    <string name="skill_level_5">Master</string>
+    
+    <!-- Stats Screen -->
+    <string name="stats_title">Stats</string>
+    <string name="stats_games_played">Games played</string>
+    <string name="stats_games_won">Games won</string>
+    <string name="stats_games_lost">Games lost</string>
+    <string name="stats_games_default">0</string>
+    
+    <!-- Setup Game Screen -->
+    <string name="setup_game_title">Start a game</string>
+    <string name="setup_game_players">Select players</string>
+    <string name="setup_game_player">Select player</string>
+    <string name="setup_game_map">Select a cave</string>
+    <string name="setup_game_start_button">Start Game</string>
+    <string name="setup_game_start_help">Add 2&#8211;4 players to begin the game</string>
+    <string name="setup_game_player_type_local">Human</string>
+    <string name="setup_game_player_type_remote">Remote players</string>
+    <string name="setup_game_player_type_virtual">Android</string>
+    <string name="setup_game_enable_bluetooth">Enable Bluetooth</string>
+    <string name="setup_game_select_player_button">Select</string>
+    <string name="setup_game_select_player_name">Player name</string>
+    <string name="setup_game_select_player_empty">Empty</string>
+    <string name="setup_game_select_player_remove">Remove player</string>
+    
+    <!-- Bluetooth -->
+    <string name="bluetooth_enable">Enable Bluetooth</string>
+    <string name="bluetooth_is_disabled">Bluetooth is disabled</string>
+    <string name="bluetooth_device">Remote device</string>
+    <string name="bluetooth_device_connection_status">Connection status</string>
+    <string name="bluetooth_device_connection_status_connecting">Connecting&#8230;</string>
+    <string name="bluetooth_device_connection_status_connected">Connected</string>
+    <string name="bluetooth_device_connection_status_failed">Failed</string>
+    
+    <!-- Game Maps -->
+    <string name="map_winding_cave">Winding Cave</string>
+    <string name="map_ups_and_downs">Ups &amp; Downs</string>
+    <string name="map_spiral_cave">Spiral Cave</string>
+    <string name="map_lauren_land">Lauren Land</string>
+    
+    <!-- Game -->
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="player3">Player 3</string>
+    <string name="player4">Player 4</string>
+    
+    <!-- Join Game Screen -->
+    <string name="join_game_title">Join game</string>
+    <string name="join_game_map_image">Selected map</string>
+    <string name="join_game_waiting_invites">Waiting for invites&#8230;</string>
+    <string name="join_game_waiting_start">Waiting for game to begin&#8230;</string>
+    <string name="join_game_error">Device not discoverable</string>
+    <string name="join_game_make_device_discoverable">Make discoverable</string>
+    
+    <!-- Remote Game Screen -->
+    <string name="remote_game_title">Remote game</string>
+    <string name="remote_game_send_a_message">Send a message</string>
+    <string name="remote_game_send">Send</string>
+    
+    <!-- Main Menu Screen -->
+    <string name="main_menu_start_game">Start game</string>
+    <string name="main_menu_join_game">Join game</string>
+    <string name="main_menu_stats">View stats</string>
+    <string name="main_menu_options">Options</string>
+    
+    <!-- About Screen -->
+    <string name="about_title">About this app</string>
+    <string name="about_details_1">This application was developed as part of a BSc Software Engineering degree at Nottingham Trent University.</string>
+    <string name="about_details_2">It is designed to aid in the learning of basic math skills for 6 &#8211; 11 year olds.</string>
+    <string name="about_licence">This project and all assets can be found on GitHub and are published under the open source MIT license.</string>
+    <string name="about_creator">&#xa9; 2013 Eddie Lee</string>
+    
+    <!-- Action Bar Menu -->
+    <string name="action_bar_menu_stats_reset">Reset stats</string>
+    <string name="action_bar_menu_about">About this app</string>
+    <string name="action_bar_menu_close">Close</string>
+    
+</resources>

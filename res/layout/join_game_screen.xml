@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PageBase"
+    android:orientation="vertical"
+    tools:context=".JoinGameActivity"
+    tools:ignore="UseCompoundDrawables" >
+
+    <TextView
+        style="@style/PageTitle"
+        android:text="@string/join_game_title" />
+
+    <LinearLayout
+        android:id="@+id/gameDetailsSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/selectMapImage"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/join_game_map_image"
+                android:src="@drawable/map_spiral_cave" />
+
+            <TextView
+                android:id="@+id/selectedMapName"
+                style="@style/SmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:text="@string/map_spiral_cave" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mapClicked"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/half_vertical_margin"
+                android:paddingLeft="@dimen/half_horizontal_margin"
+                android:paddingRight="@dimen/half_horizontal_margin"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:tag="windingCave.csv" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/player1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/default_display_picture" />
+
+                <TextView
+                    style="@style/SmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/half_vertical_margin"
+                    android:text="@string/player1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mapClicked"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/half_vertical_margin"
+                android:paddingLeft="@dimen/half_horizontal_margin"
+                android:paddingRight="@dimen/half_horizontal_margin"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:tag="spiralCave.csv" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/player2"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/default_display_picture" />
+
+                <TextView
+                    style="@style/SmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/half_vertical_margin"
+                    android:text="@string/player2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mapClicked"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/half_vertical_margin"
+                android:paddingLeft="@dimen/half_horizontal_margin"
+                android:paddingRight="@dimen/half_horizontal_margin"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:tag="laurenLand.csv" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/player3"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/default_display_picture" />
+
+                <TextView
+                    style="@style/SmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/half_vertical_margin"
+                    android:text="@string/player3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="mapClicked"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/half_vertical_margin"
+                android:paddingLeft="@dimen/half_horizontal_margin"
+                android:paddingRight="@dimen/half_horizontal_margin"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:tag="upsAndDowns.csv" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/player4"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/default_display_picture" />
+
+                <TextView
+                    style="@style/SmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/half_vertical_margin"
+                    android:text="@string/player4" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/joinGameWaitingSpinner"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/joinGameErrorIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/join_game_error"
+            android:src="@drawable/error"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loading_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/join_game_waiting_invites" />
+
+        <Button
+            android:id="@+id/makeDeviceDiscoverableButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="makeDeviceDiscoverableButtonClicked"
+            android:text="@string/join_game_make_device_discoverable"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

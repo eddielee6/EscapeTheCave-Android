@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="playerOneColour">#3bc9bf</color>
+    <color name="playerTwoColour">#c93b3b</color>
+    <color name="playerThreeColour">#3b59c9</color>
+    <color name="playerFourColour">#3bc942</color>
+</resources>

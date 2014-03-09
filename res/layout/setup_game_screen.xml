@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PageBase"
+    android:orientation="vertical" >
+    
+    <TextView
+        style="@style/PageTitle"
+        android:layout_height="wrap_content"
+        android:text="@string/setup_game_title" />
+
+    <TextView
+        style="@style/SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setup_game_players" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/half_vertical_margin" >
+
+                    <TextView
+                        style="@style/LargeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="@dimen/half_vertical_margin"
+                        android:text="@string/player1" />
+
+                    <TextView
+                        android:id="@+id/player1Name"
+                        style="@style/SmallText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/setup_game_select_player_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/player1DisplayPicture"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="@dimen/small"
+                        android:layout_marginRight="@dimen/small"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/player1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_display_picture" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/player2DisplayPicture"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="@dimen/small"
+                        android:layout_marginLeft="@dimen/small"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/player2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/player_select_2" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/half_vertical_margin" >
+
+                    <TextView
+                        style="@style/LargeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/half_vertical_margin"
+                        android:text="@string/player2" />
+
+                    <TextView
+                        android:id="@+id/player2Name"
+                        style="@style/SmallText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_game_select_player_empty" />
+
+                    <Button
+                        android:id="@+id/player2SelectButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:onClick="selectPlayerButtonClicked"
+                        android:tag="2"
+                        android:text="@string/setup_game_select_player_button" />
+
+                </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/half_vertical_margin" >
+
+                    <TextView
+                        style="@style/LargeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="@dimen/half_vertical_margin"
+                        android:text="@string/player3" />
+
+                    <TextView
+                        android:id="@+id/player3Name"
+                        style="@style/SmallText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/setup_game_select_player_empty" />
+
+                    <Button
+                        android:id="@+id/player3SelectButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:onClick="selectPlayerButtonClicked"
+                        android:tag="3"
+                        android:text="@string/setup_game_select_player_button" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/player3DisplayPicture"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="@dimen/small"
+                        android:layout_marginTop="@dimen/small"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/player3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/player_select_3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/player4DisplayPicture"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="@dimen/small"
+                        android:layout_marginTop="@dimen/small"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/player4"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/player_select_4" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/half_vertical_margin" >
+
+                    <TextView
+                        style="@style/LargeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/half_vertical_margin"
+                        android:text="@string/player4" />
+
+                    <TextView
+                        android:id="@+id/player4Name"
+                        style="@style/SmallText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setup_game_select_player_empty" />
+
+                    <Button
+                        android:id="@+id/player4SelectButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:onClick="selectPlayerButtonClicked"
+                        android:tag="4"
+                        android:text="@string/setup_game_select_player_button" />
+
+                </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        style="@style/SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/half_vertical_margin"
+        android:layout_marginTop="@dimen/half_vertical_margin"
+        android:text="@string/setup_game_map" />
+
+    <LinearLayout
+        android:id="@+id/mapSelectArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:onClick="mapClicked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selected_background"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/half_vertical_margin"
+            android:paddingLeft="@dimen/half_horizontal_margin"
+            android:paddingRight="@dimen/half_horizontal_margin"
+            android:paddingTop="@dimen/half_vertical_margin"
+            android:tag="windingCave.csv" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/map_winding_cave"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_winding_cave" />
+
+            <TextView
+                style="@style/SmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:text="@string/map_winding_cave" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="mapClicked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/half_vertical_margin"
+            android:paddingLeft="@dimen/half_horizontal_margin"
+            android:paddingRight="@dimen/half_horizontal_margin"
+            android:paddingTop="@dimen/half_vertical_margin"
+            android:tag="spiralCave.csv" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/map_spiral_cave"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_spiral_cave" />
+
+            <TextView
+                style="@style/SmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:text="@string/map_spiral_cave" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="mapClicked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/half_vertical_margin"
+            android:paddingLeft="@dimen/half_horizontal_margin"
+            android:paddingRight="@dimen/half_horizontal_margin"
+            android:paddingTop="@dimen/half_vertical_margin"
+            android:tag="laurenLand.csv" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/map_lauren_land"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_lauren_land" />
+
+            <TextView
+                style="@style/SmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:text="@string/map_lauren_land" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="mapClicked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/half_vertical_margin"
+            android:paddingLeft="@dimen/half_horizontal_margin"
+            android:paddingRight="@dimen/half_horizontal_margin"
+            android:paddingTop="@dimen/half_vertical_margin"
+            android:tag="upsAndDowns.csv" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/map_ups_and_downs"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_ups_and_downs" />
+
+            <TextView
+                style="@style/SmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/half_vertical_margin"
+                android:text="@string/map_ups_and_downs" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/startGameButton"
+        style="@style/StyledButton"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_vertical_margin"
+        android:enabled="false"
+        android:onClick="startGameClicked"
+        android:text="@string/setup_game_start_button" />
+
+</LinearLayout>

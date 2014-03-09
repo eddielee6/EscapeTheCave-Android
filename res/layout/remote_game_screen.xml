@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PageBase"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/PageTitle"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/remote_game_title" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remote_game_send_a_message" />
+
+    <EditText
+        android:id="@+id/messageToSend"
+        android:inputType="textNoSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:enabled="false"
+        android:onClick="sendMessage"
+        android:text="@string/remote_game_send" />
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+</LinearLayout>

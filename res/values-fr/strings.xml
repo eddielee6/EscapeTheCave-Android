@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Escape The Cave</string>
+    
+    <!-- Options Screen -->
+    <string name="options_title">Options de</string>
+    <string name="options_display_picture">Afficher l\'image</string>
+    <string name="options_your_name">Votre nom</string>
+    <string name="options_your_name_default">Joueur 1</string>
+    <string name="options_skill">Compétences mathématiques</string>
+    
+    <string name="options_skill_reason">Le plus vous êtes, plus les questions</string>
+    
+    <string name="options_display_set_camera">prendre une photo</string>
+    <string name="options_display_set_existing">Sélectionnez la photo</string>
+    <string name="options_display_set_icon">S\u00e9lectionnez l\'ic\u00f4ne</string>
+    
+    <string name="skill_level_0">Non formé</string>
+    <string name="skill_level_1">Novice</string>
+    <string name="skill_level_2">Compétent</string>
+    <string name="skill_level_3">Professionnel</string>
+    <string name="skill_level_4">Vétéran</string>
+    <string name="skill_level_5">Maître</string>
+    
+    <!-- Stats Screen -->
+    <string name="stats_title">Statistiques</string>
+    <string name="stats_games_played">Participation aux jeux</string>
+    <string name="stats_games_won">Matchs gagnés</string>
+    <string name="stats_games_lost">Matchs perdus</string>
+    <string name="stats_games_default">0</string>
+    
+    <!-- Setup Game Screen -->
+    <string name="setup_game_title">Démarrer un jeu</string>
+    <string name="setup_game_players">Sélectionner les joueurs</string>
+    <string name="setup_game_player">Sélectionnez joueur</string>
+    <string name="setup_game_map">Sélectionnez une grotte</string>
+    <string name="setup_game_start_button">Démarrer un jeu.</string>
+    <string name="setup_game_start_help">Ajouter 2&#8211;4 joueurs pour commencer le jeu.</string>
+    <string name="setup_game_player_type_local">Humain</string>
+    <string name="setup_game_player_type_remote">Joueurs à distance</string>
+    <string name="setup_game_player_type_virtual">Android</string>
+    <string name="setup_game_enable_bluetooth">Activez la fonction Bluetooth</string>
+    <string name="setup_game_select_player_button">Sélectionner</string>
+    <string name="setup_game_select_player_name">Nom du joueur</string>
+    <string name="setup_game_select_player_empty">Vide</string>
+    <string name="setup_game_select_player_remove">Retirer joueur</string>
+    
+    <!-- Bluetooth -->
+    <string name="bluetooth_enable">Activez la fonction Bluetooth</string>
+    <string name="bluetooth_is_disabled">Bluetooth est désactivé</string>
+    <string name="bluetooth_device">Périphérique distant</string>
+    <string name="bluetooth_device_connection_status">état de la connexion</string>
+    <string name="bluetooth_device_connection_status_connecting">de liaison&#8230;</string>
+    <string name="bluetooth_device_connection_status_connected">lié</string>
+    <string name="bluetooth_device_connection_status_failed">manqué</string>
+    
+    <!-- Game Maps -->
+    <string name="map_winding_cave">Winding Cave</string>
+    <string name="map_ups_and_downs">Ups &amp; Downs</string>
+    <string name="map_spiral_cave">Spiral Cave</string>
+    <string name="map_lauren_land">Lauren Land</string>
+    
+    <!-- Game -->
+    <string name="player1">Joueur 1</string>
+    <string name="player2">Joueur 2</string>
+    <string name="player3">Joueur 3</string>
+    <string name="player4">Joueur 4</string>
+    
+    <!-- Join Game Screen -->
+    <string name="join_game_title">Rejoindre une partie</string>
+    <string name="join_game_map_image">Carte sélectionnée</string>
+    <string name="join_game_waiting_invites">En attendant invite&#8230;</string>
+    <string name="join_game_waiting_start">En attente de jeu pour commencer&#8230;</string>
+    <string name="join_game_error">Périphérique non détectable</string>
+    <string name="join_game_make_device_discoverable">Assurez-découvrable</string>
+    
+    <!-- Remote Game Screen -->
+    <string name="remote_game_title">Jeu à distance</string>
+    
+    <!-- Main Menu Screen -->
+    <string name="main_menu_start_game">Démarrer le jeu</string>
+    <string name="main_menu_join_game">Rejoindre une partie</string>
+    <string name="main_menu_stats">Voir les stats</string>
+    <string name="main_menu_options">Options de</string>
+    
+    <!-- About Screen -->
+    <string name="about_title">Propos de l\'application</string>
+    <string name="about_details_1">Cette application a \u00e9t\u00e9 d\u00e9velopp\u00e9e dans le cadre d\'un baccalaur\u00e9at \u00e8s sciences en g\u00e9nie logiciel \u00e0 l\'Universit\u00e9 de Nottingham Trent.</string>
+    <string name="about_details_2">Il est con\u00e7u pour aider \u00e0 l\'apprentissage des comp\u00e9tences de base en math\u00e9matiques pour les 6 \&#8211; 11 ans.</string>
+    <string name="about_licence">Ce projet et tous les actifs peuvent être trouvées sur GitHub et sont publiés sous la licence MIT open source.</string>
+    <string name="about_creator">&#xa9; 2013 Eddie Lee</string>
+    
+    <!-- Action Bar Menu -->
+    <string name="action_bar_menu_stats_reset">Réinitialiser stats</string>
+    <string name="action_bar_menu_about">Propos de l\'application</string>
+    <string name="action_bar_menu_close">Fermer</string>
+    
+</resources>

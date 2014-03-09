@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PageBase"
+    android:orientation="vertical"
+    tools:context=".OptionsActivity" >
+
+    <TextView
+        style="@style/PageTitle"
+        android:text="@string/options_title" />
+    
+    
+    <!-- Display picture -->
+    
+    <TextView
+        style="@style/SubTitle"
+        android:text="@string/options_display_picture" />
+    
+    <LinearLayout
+        style="@style/Section"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp">
+            
+             <ProgressBar
+                android:id="@+id/display_picture_spinner"
+                style="?android:attr/progressBarStyleLarge"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/user_display_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/options_display_picture"
+                android:scaleType="centerCrop" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+            <Button
+                android:id="@+id/button_take_photo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/camera"
+                android:onClick="setDisplayPictureFromCameraClicked"
+                android:text="@string/options_display_set_camera" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/photo"
+                android:onClick="setDisplayPictureFromGalleryClicked"
+                android:text="@string/options_display_set_existing" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/hat"
+                android:onClick="setDisplayPictureFromDefaultsClicked"
+                android:text="@string/options_display_set_icon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <!-- Users name -->
+    
+    <TextView
+        style="@style/SubTitle"
+        android:text="@string/options_your_name" />
+    
+    <LinearLayout style="@style/Section">
+
+   		<EditText
+   		    android:id="@+id/user_name"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:inputType="textNoSuggestions"
+   		    android:text="@string/options_your_name_default"
+   		    android:textSize="30sp" />
+
+	</LinearLayout>
+	
+   
+    <!-- Skill level -->
+    
+    <TextView
+        style="@style/SubTitle"
+        android:text="@string/options_skill" />
+    
+    <TextView
+            style="@style/SmallText"
+            android:text="@string/options_skill_reason" />
+
+    <LinearLayout
+        style="@style/Section"
+        android:layout_width="wrap_content">
+
+        <RatingBar
+	        android:id="@+id/user_skill"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:numStars="5"
+	        android:rating="2"
+	        android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/user_skill_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/skill_level_2"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    
+</LinearLayout>
